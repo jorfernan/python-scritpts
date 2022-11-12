@@ -1,4 +1,4 @@
 #!/usr/bin/env python3
-def order(sentence):
+def order_sentence(sentence):
     # code here
-    return
+    return 'a'
