@@ -25,5 +25,4 @@ class testYourOrder(unittest.TestCase):
         self.assertEqual(order_sentence(""), "")
 
 if __name__ == '__main__':
-    print(order("as"))
     unittest.main()
