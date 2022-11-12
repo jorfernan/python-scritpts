@@ -1,6 +1,6 @@
-import unittest
-import sys
 import os
+import sys
+import unittest
 
 # Getting the name of the directory
 # Where the this file is present.
@@ -12,17 +12,18 @@ parentDir = os.path.dirname(currentDir)
 # the sys.path.
 sys.path.append(parentDir)
 
-import order
+from order import order_sentence
 
 
 class testYourOrder(unittest.TestCase):
     
     def standarUse(self):
-        self.assertEqual(order("is2 Thi1s T4est 3a"), "Thi1s is2 3a T4est")
-        self.assertEqual(order("4of Fo1r pe6ople g3ood th5e the2"), "Fo1r the2 g3ood 4of th5e pe6ople")
+        self.assertEqual(order_sentence("is2 Thi1s T4est 3a"), "Thi1s is2 3a T4est")
+        self.assertEqual(order_sentence("4of Fo1r pe6ople g3ood th5e the2"), "Fo1r the2 g3ood 4of th5e pe6ople")
     
     def emptyString(self):
-        self.assertEqual(order(""), "")
+        self.assertEqual(order_sentence(""), "")
 
 if __name__ == '__main__':
+    print(order("as"))
     unittest.main()
