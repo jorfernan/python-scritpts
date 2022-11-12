@@ -23,3 +23,6 @@ class testYourOrder(unittest.TestCase):
     
     def emptyString(self):
         self.assertEqual(order(""), "")
+
+if __name__ == '__main__':
+    unittest.main()
