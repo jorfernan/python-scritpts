@@ -6,3 +6,6 @@ def order_sentence(sentence):
     # the input sentence is empty
     if sentence == '':
         return ''
+    # Turn input string into list
+    word_list = sentence.split()
+    
