@@ -27,6 +27,3 @@ def expanded_form(num):
     
     return res[:-2].strip()
 
-
-
-expanded_form(7304.304)
